@@ -5,7 +5,7 @@ A General Data Structure (GDS) is a universal, composable data structure, used t
 This could be for example the definition of configurations, specifications and data sets.
 Typical usage is the definition of configurations, specifications and data sets. 
 The GDS language is a special DSL (domain specific language) for defining general data structures. 
-It uses a succinct, indentation-sensitive syntax which makes data more readable. 
+It uses a succinct, indentation-sensitive syntax which makes data clearer and more readable. 
 The building blocks for general data structures are hashes and arrays.
 
 Installation
@@ -65,6 +65,21 @@ Tab characters are not allowed for indentation.
 # =>  [ 'v1', { k2: 'v2' }, { k31: 'v31', k32: 'v32', k33: 'v33', k34: 'v34', k35: 'v35', k36: 'v36' }, 
         { k41: 'v41', k42: 'v42', k43: [], k44: [1, 2, 3, 4, 5, 6, 7, 8, 9, { k441: 'v441' } ] }, 'v5' ] 
 ~~~
+
+## Motivation and Features
+
+  * the focus is on the essential data 
+  * structure and hierarchy is expressed using indentation (whitespace-sensitive) - avoids curly braces and square brackets
+  * uses a succinct and minimalist syntax - tries to avoid unnecessary characters
+  * in many cases colons, commas and quotes are not necessary
+  * less text makes data clearer and more readable
+  * for configuration and specification - replacement for XML, JSON, YAML
+  * for data/database seeding
+  * less text and less potential errors using schema definitions
+  * supports block comments, which could be nested
+  * allows also the definition of hash and array structures in a kind of restricted classic Ruby like syntax
+  * provides an alternative for Ruby hash and array definition without using eval(); can be used as a protection against code injection vulnerabilities, e.g. on web servers
+
 
 ## Schema specifiers
 
