@@ -12,7 +12,7 @@ Installation
 A Short Example
 ===============
 
-~~~
+~~~ruby
 require "gdstruct"
 
 h = GDstruct.c( <<-EOS )
