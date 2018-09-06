@@ -35,8 +35,8 @@ An Introduction
 
 The GDS language uses two basic symbols (__:__ and __,__) for the creation of hashes and arrays.
 
-__:__   A colon is used to define a hash.  
-__,__   A comma is used to define an array.  
+A colon (__:__) is used to define a hash.
+A comma (__,__) is used to define an array.  
 
 Use indentation with two spaces for the definition of elements and for nested structures. 
 Tab characters are not allowed for indentation.
